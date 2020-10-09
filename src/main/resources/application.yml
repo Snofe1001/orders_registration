@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        show_sql: false
+        format_sql: false
+
+app:
+  postgresql:
+    url: 'jdbc:postgresql://localhost:5432/telros-college?autoReconnect=true&characterEncoding=UTF-8'
+    user: 'postgres'
+    password: 'postgres'
