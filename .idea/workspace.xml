@@ -19,33 +19,21 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="133e97d7-b429-4f77-a194-03dc9fcc4756" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/requests_registration/ApplicationMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/requests_registration/auth/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/requests_registration/auth/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/requests_registration/auth/repository/RoleJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/requests_registration/auth/repository/UserJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/requests_registration/auth/service/UserDetailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/requests_registration/config/FlywayConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/requests_registration/config/HibernatePhysicalNamingStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/requests_registration/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/migration/auth/V1.0.0__Initial.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/migration/auth/V1.0.1__Create_auth_schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/migration/work/V1.0.0__Initial.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/migration/work/V1.0.1__Create_work_schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/requests_registration/auth/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/requests_registration/auth/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/requests_registration/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/requests_registration/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/requests_registration/work/controller/RequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/requests_registration/work/controller/RequestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/requests_registration/work/repository/RequestJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/requests_registration/work/repository/RequestJpaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/requests_registration/work/service/RequestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/requests_registration/work/service/RequestServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/requests_registration/work/service/interfaces/RequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/requests_registration/work/service/interfaces/RequestService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +67,15 @@
     <property name="LombokPluginIS_LOMBOK_VERSION_CHECK_Enabled" value="false" />
     <property name="LombokPluginIS_MISSING_LOMBOK_CHECK_Enabled" value="false" />
     <property name="LombokPluginIS_VAL_Enabled" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/migration/work" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -99,6 +91,26 @@
       <recent name="C:\Users\netisov\IdeaProjects\requests_registration\src\main\resources\migration\auth" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="ApplicationMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="requests_registration" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.requests_registration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.requests_registration.ApplicationMain" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ApplicationMain" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -111,8 +123,17 @@
       <updated>1602230317133</updated>
       <workItem from="1602230320131" duration="628000" />
       <workItem from="1602238277370" duration="1256000" />
-      <workItem from="1602239841125" duration="4095000" />
+      <workItem from="1602239841125" duration="4810000" />
+      <workItem from="1602489982426" duration="1572000" />
     </task>
+    <task id="LOCAL-00001" summary="Update: в процессе добавления миграций, моделей, создал основные конфиги">
+      <created>1602246283647</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602246283647</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,24 +144,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update: в процессе добавления миграций, моделей, создал основные конфиги" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: в процессе добавления миграций, моделей, создал основные конфиги" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1602243329303">
@@ -151,9 +164,76 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="554" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602243513959" />
+    <state x="543" y="88" key="CommitChangelistDialog2" timestamp="1602246280788">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="543" y="88" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602246280788" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1602491825662">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602491825662" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1602491825662">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602491825662" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1602491825662">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602491825662" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1602491825662">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602491825662" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1602491832217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602491832217" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1602491832217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602491832217" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1602491832217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602491832217" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1602491832217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602491832217" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1602491825582">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602491825582" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1602491825582">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602491825582" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1602491825582">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602491825582" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1602491825582">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602491825582" />
     <state x="440" y="94" key="SettingsEditor" timestamp="1602240314084">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602240314084" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602246285667">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602246285667" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/requests_registration/work/service/RequestServiceImpl.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -12,7 +12,7 @@ public interface RequestService {
 
     ResponseEntity<ResponseObjectDto> updateRequest(RequestDto requestDto);
 
-    ResponseEntity<ResponseObjectDto> getAllRequestsByUserId(Integer userId);
+    ResponseEntity<ResponseObjectDto> getAllRequestsByUserId();
 
     ResponseEntity<ResponseObjectDto> getAllPostedRequests();
 

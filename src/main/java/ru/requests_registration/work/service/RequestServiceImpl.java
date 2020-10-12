@@ -77,10 +77,12 @@ public class RequestServiceImpl implements RequestService {
     }
 
     @Override
-    public ResponseEntity<ResponseObjectDto> getAllRequestsByUserId(Integer userId) {
+    public ResponseEntity<ResponseObjectDto> getAllRequestsByUserId() {
         try {
+            Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+            User currentUser = userJpaRepository.getByLogin(authentication.getName());
             return CommonUtils.returnDefaultGoodResponseWithObject
-                    (requestMapper.convertToListRequestDto(requestJpaRepository.getByCreatedById(userId)));
+                    (requestMapper.convertToListRequestDto(requestJpaRepository.getByCreatedById(currentUser.getId())));
         } catch (Exception e) {
             return CommonUtils.returnDefaultErrorResponseWithMessage("Ошибка получения заявок по пользователю");
         }
@@ -99,8 +101,9 @@ public class RequestServiceImpl implements RequestService {
     public ResponseEntity<ResponseObjectDto> sendRequestToOperator(RequestDto requestDto) {
         try {
             if (requestDto.getRequestStatus().getName().equals("DRAFT")) {
+                requestJpaRepository.postRequestById(requestDto.getId());
                 return CommonUtils.returnDefaultGoodResponseWithObject
-                        (requestMapper.convert(requestJpaRepository.postRequestById(requestDto.getId()), RequestDto.class));
+                        (requestMapper.convert(requestJpaRepository.getById(requestDto.getId()), RequestDto.class));
             }
             ResponseObjectDto responseObjectDto = new ResponseObjectDto();
             responseObjectDto.setError(true);
@@ -116,8 +119,9 @@ public class RequestServiceImpl implements RequestService {
     public ResponseEntity<ResponseObjectDto> approveRequest(RequestDto requestDto) {
         try {
             if (requestDto.getRequestStatus().getName().equals("POSTED")) {
+                requestJpaRepository.approveRequestById(requestDto.getId());
                 return CommonUtils.returnDefaultGoodResponseWithObject
-                        (requestMapper.convert(requestJpaRepository.approveRequestById(requestDto.getId()), RequestDto.class));
+                        (requestMapper.convert(requestJpaRepository.getById(requestDto.getId()), RequestDto.class));
             }
             ResponseObjectDto responseObjectDto = new ResponseObjectDto();
             responseObjectDto.setError(true);
@@ -133,8 +137,9 @@ public class RequestServiceImpl implements RequestService {
     public ResponseEntity<ResponseObjectDto> refuseRequest(RequestDto requestDto) {
         try {
             if (requestDto.getRequestStatus().getName().equals("POSTED")) {
+                requestJpaRepository.refuseRequestById(requestDto.getId());
                 return CommonUtils.returnDefaultGoodResponseWithObject
-                        (requestMapper.convert(requestJpaRepository.refuseRequestById(requestDto.getId()), RequestDto.class));
+                        (requestMapper.convert(requestJpaRepository.getById(requestDto.getId()), RequestDto.class));
             }
             ResponseObjectDto responseObjectDto = new ResponseObjectDto();
             responseObjectDto.setError(true);

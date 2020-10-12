@@ -35,8 +35,8 @@ public class RequestController {
     @GetMapping("/api/request/getAllRequestsByUserId")
     @ResponseBody
     @Secured("ROLE_USER")
-    public ResponseEntity<ResponseObjectDto> getAllRequestsByUserId(@RequestParam("userId") Integer userId) {
-        return requestService.getAllRequestsByUserId(userId);
+    public ResponseEntity<ResponseObjectDto> getAllRequestsByUserId() {
+        return requestService.getAllRequestsByUserId();
     }
 
     @GetMapping("/api/request/getAllPostedRequests")
@@ -46,21 +46,21 @@ public class RequestController {
         return requestService.getAllPostedRequests();
     }
 
-    @GetMapping("/api/request/sendRequestToOperator")
+    @PostMapping("/api/request/sendRequestToOperator")
     @ResponseBody
     @Secured("ROLE_USER")
     public ResponseEntity<ResponseObjectDto> sendRequestToOperator(@RequestBody RequestDto requestDto) {
         return requestService.sendRequestToOperator(requestDto);
     }
 
-    @GetMapping("/api/request/approveRequest")
+    @PostMapping("/api/request/approveRequest")
     @ResponseBody
     @Secured("ROLE_OPERATOR")
     public ResponseEntity<ResponseObjectDto> approveRequest(@RequestBody RequestDto requestDto) {
         return requestService.approveRequest(requestDto);
     }
 
-    @GetMapping("/api/request/refuseRequest")
+    @PostMapping("/api/request/refuseRequest")
     @ResponseBody
     @Secured("ROLE_OPERATOR")
     public ResponseEntity<ResponseObjectDto> refuseRequest(@RequestBody RequestDto requestDto) {
