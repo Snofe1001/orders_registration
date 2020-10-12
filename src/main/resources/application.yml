@@ -1,3 +1,5 @@
+server:
+  port: 3000
 spring:
   jpa:
     properties:
@@ -7,6 +9,6 @@ spring:
 
 app:
   postgresql:
-    url: 'jdbc:postgresql://localhost:5432/telros-college?autoReconnect=true&characterEncoding=UTF-8'
+    url: 'jdbc:postgresql://localhost:5432/requests_registration?autoReconnect=true&characterEncoding=UTF-8'
     user: 'postgres'
-    password: 'postgres'
+    password: 'qwe123qwe'

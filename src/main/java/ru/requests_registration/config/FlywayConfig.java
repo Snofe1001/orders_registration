@@ -33,4 +33,19 @@ public class FlywayConfig {
             @Qualifier("flyway-auth") Flyway flyway) {
         return new FlywayMigrationInitializer(flyway, null);
     }
+
+    @Bean(name = "flyway-work")
+    public Flyway flywaySchemaWork() {
+        return Flyway.configure()
+                .dataSource(url, user, password)
+                .locations("classpath:migration/work")
+                .schemas("work")
+                .load();
+    }
+
+    @Bean(name = "flyway-work-initializer")
+    public FlywayMigrationInitializer flywaySchemaWorkInitializer(
+            @Qualifier("flyway-work") Flyway flyway) {
+        return new FlywayMigrationInitializer(flyway, null);
+    }
 }

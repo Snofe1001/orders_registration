@@ -6,4 +6,6 @@ import ru.requests_registration.auth.model.Role;
 
 @Repository
 public interface RoleJpaRepository extends JpaRepository<Role, Integer> {
+
+    Role getByName(String name);
 }
