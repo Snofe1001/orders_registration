@@ -26,7 +26,7 @@ public class UserController {
         return userService.getAllUserList();
     }
 
-    @GetMapping("/api/user/changeStatusToOperator")
+    @PostMapping("/api/user/changeStatusToOperator")
     @ResponseBody
     @Secured("ROLE_ADMIN")
     public ResponseEntity<ResponseObjectDto> setUserStatusToOperatorByUserId(@RequestParam("userId") Integer userId) {
